@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ada Lovelace</title>
+    <style>
+          body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: hueAnimation 5s infinite linear;
+      font-size: 1.4vmax;
+      font-family: monospace;
+      color: #444;
+    }
+
+    @keyframes hueAnimation {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+
+    /* Add a fallback gradient color to make the animation pop */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+      z-index: -1;
+      filter: hue-rotate(0deg);
+      animation: hueAnimation 5s infinite linear;
+    }
+
+    #container {
+      width: 80vw;
+      background-color: #f2f2f2;
+      border: #444 solid 5px;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: black 0px 0px 10px;
+    }
+
+    p {
+      text-align: justify;
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+      <h1>Ada Lovelace</h1>
+      <h2>Por Augusto, T. 201</h2>
+
+      <p>
+        Ada Lovelace foi uma matemática e escritora, reconhecida pelos seus
+        trabalhos pioneiros na ciência da computação.
+      </p>
+
+      <p>
+        Nascida em 1815, sendo a única filha legítima do poeta romântico Lord Byron, Ada mostrou talento para números e linguagem desde jovem. Ela tornou-se amiga e colaboradora do matemático e inventor Charles Babbage, conhecido como o pai dos computadores. Em 1842, Babbage pediu a Ada que traduzisse um artigo sobre sua máquina analítica. Ela não apenas traduziu, mas também acrescentou suas próprias ideias e conceitos inovadores sobre como a máquina poderia ser programada para realizar cálculos complexos, indo além de simples números. Suas anotações, publicadas em 1843, são consideradas o primeiro programa de computador da história.
+      </p>
+      <p>
+        Ada Lovelace faleceu em 1852, aos 36 anos, devido a um câncer no útero. Suas contribuições para a tecnologia só foram amplamente reconhecidas mais de um século após sua morte. Hoje, ela é lembrada como a primeira programadora de computadores, e sua visão sobre o potencial da máquina analítica antecipou muitos avanços futuros na ciência da computação. Em homenagem ao seu trabalho pioneiro, a segunda terça-feira de outubro de cada ano é celebrada como o Dia de Ada Lovelace, quando as contribuições das mulheres para a ciência, tecnologia, engenharia e matemática são reconhecidas e comemoradas.
+      </p>
+    </div>
+</body>
+</html>
